@@ -22,11 +22,12 @@ public class Area {
     private Long id;
     private String city;
     private String district;
-//    private Integer managerCount;
+    private Integer managerCount;
 
 
-    public Area(String city, String district) {
+    public Area(String city, String district, Integer managerCount) {
         this.city=city;
         this.district=district;
+        this.managerCount = managerCount;
     }
 }

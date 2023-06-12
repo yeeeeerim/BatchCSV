@@ -56,7 +56,8 @@ public class AreaReaderJobConfig {
 		lineMapper.setLineTokenizer(lineTokenizer);
 		lineMapper.setFieldSetMapper(fieldSet -> new Area(
 				fieldSet.readString(0),
-				fieldSet.readString(1)));
+				fieldSet.readString(1),
+				fieldSet.readInt(2)));
 
 		FlatFileItemReader<Area> itemReader = new FlatFileItemReaderBuilder<Area>()
 				.name("saveAreaItemReader")
