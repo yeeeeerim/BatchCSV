@@ -27,7 +27,7 @@ import javax.persistence.EntityManagerFactory;
 
 @Configuration
 @RequiredArgsConstructor
-public class AreaReaderJobConfig {
+public class AreaReaderJobConfig { //Config
 	private final JobBuilderFactory jobBuilderFactory;
 	private final StepBuilderFactory stepBuilderFactory;
 	private final EntityManagerFactory entityManagerFactory;
@@ -83,6 +83,8 @@ public class AreaReaderJobConfig {
 
 		itemWriter.afterPropertiesSet();
 		return itemWriter;
+
+
 	}
 
 }
